@@ -5,11 +5,19 @@ Discrete event simulator of a queuing system of type G / G / k in which the mana
 -----------------------------------------------------------------
 
 - The program will get all the input from the command line. The parameters of the command line must be the following:
-  á Configuration file name with extension "cfg" by default.
-  á Initial seed for random number generation.
-  á Initial time to consider transient.
+  - Configuration file name with extension "cfg" by default.
+  - Initial seed for random number generation.
+  - Initial time to consider transient.
 
 - Example: "xxxxxxxxx"
 - The specific data to simulate will be read from the configuration file,  which will be of type ASCII and will have the following format:
-  á In the first line will be stored separated by a space:
+  - In the first line will be stored separated by a space:
     1. The tolerance interval on the average.
+    2.  Quality (probability) required.
+  - The second line will contain, separated by a space, Î± and Î² for growing a user priority queue box and service box respectively.
+  - The third line specifies management algorithm in the service box, which may be only FCFS or RR, indicated by a capital letter:
+    - R for Round Robin.
+    - F for First Called First Served.
+  and the number of resources in the system (k), it will be an integer separated by a space from the previous parameter.
+  - The fourth line will contain the distribution of the random variable inter-arrival time.
+  - The fifth line will contain the distribution of the random variable time service requested.
