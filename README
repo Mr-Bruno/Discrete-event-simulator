@@ -1,0 +1,15 @@
+Discrete event simulator of a queuing system of type G / G / k in which the management of the queue is performed according to the algorithm Selfish.The objective is to estimate the average response time of the system.
+
+-----------------------------------------------------------------
+------------------------INSTRUCTIONS ----------------------------
+-----------------------------------------------------------------
+
+- The program will get all the input from the command line. The parameters of the command line must be the following:
+  á Configuration file name with extension "cfg" by default.
+  á Initial seed for random number generation.
+  á Initial time to consider transient.
+
+- Example: "xxxxxxxxx"
+- The specific data to simulate will be read from the configuration file,  which will be of type ASCII and will have the following format:
+  á In the first line will be stored separated by a space:
+    1. The tolerance interval on the average.
